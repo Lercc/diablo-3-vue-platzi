@@ -12,11 +12,10 @@ Portal de [desarrolladores](https://develop.battle.net/) de Blizzard
 
 [GESTIÓN DE CLIENTES](https://develop.battle.net/access/clients) de acceso a las API de Blizard.
 
+## RFC DE OAUTH
+RFC (Request For Comments -> Documento numérico en donde se describen y definen protocolos)
+See [OAuth 2.0 Authorization Framewor](https://tools.ietf.org/html/rfc6749#section-1.3.4).
 
-## Project setup
-```
-npm install
-```
 
 ### Compiles and hot-reloads for development
 ```
