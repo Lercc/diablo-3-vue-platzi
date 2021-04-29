@@ -82,3 +82,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
         /utils: Carpeta con funciones generales o que no tienen una temática definida. No es conveniente abusar de esto. Si tienes mucho contenido aquí quiere decir que deberías agrupar funcionalidades en otro directorio.
 
         /views: Aquí estarán todas las vistas de nuestra aplicación. Hay que recordar que, en Vue, todo son componentes, y, en este caso, dichos componentes hacen de vistas de nuestra aplicación.
+
+### Restructura componentes de la carpeta "VIEWS"
+    Se crea una carpeta con el nombre del componente a crear (views/HOME),
+    y dentro se crea el componete correspondiente con el nombre (index.vue),
+    para estandarizar y mejorar la estructura de los componentes y subcomponentes. 
