@@ -3,12 +3,19 @@
 ## BLIZZARD
 Portal de [desarrolladores](https://develop.battle.net/) de Blizzard
 
-[API](https://develop.battle.net/documentation/diablo-3/community-apis) de la comunidad de Blizzard
+[API ](https://develop.battle.net/documentation/diablo-3/community-apis) de la comunidad de Blizzard
+```
+Las APIs de comunidad de Diablo III, nos van a traer datos del perfil del usuario que estemos buscando, como por ejemplo, los héroes que tiene o élites que ha matado a lo largo del tiempo.
+```
 
-[API](https://develop.battle.net/documentation/diablo-3/game-data-apis) de datos de Blizzard
+[API ](https://develop.battle.net/documentation/diablo-3/game-data-apis) de datos de Blizzard
+```
+A través de las APIs de datos del juego de Diablo III, podemos obtener información sobre las temporadas, los rankings y las eras (las eras son parecidas a las temporadas, un espacio temporal limitado)
+```
 
 ## Acceso a las APIs: Crear token tipo Cliente
-[API](https://develop.battle.net/access/clients/create) de acceso a las API de Blizard.
+[API](https://develop.battle.net/access/clients/create) de creación de acceso a las API de Blizard.
+
 
 [GESTIÓN DE CLIENTES](https://develop.battle.net/access/clients) de acceso a las API de Blizard.
 
