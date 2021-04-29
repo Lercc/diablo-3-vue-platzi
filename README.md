@@ -97,3 +97,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     Se crea una carpeta con el nombre del componente a crear (views/HOME),
     y dentro se crea el componete correspondiente con el nombre (index.vue),
     para estandarizar y mejorar la estructura de los componentes y subcomponentes. 
+
+### Carpeta API
+    📂 src/
+    └──📂 api/
+    ├── oauth.js
+    ├── search.js
+    └── season.js
