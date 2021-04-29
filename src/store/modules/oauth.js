@@ -1,9 +1,18 @@
 import * as oauth from '@/api/oauth'
 
+// inicializacion - localstorage - null
+const initialAccessTokenState = () => {
+  if (localStorage.getItem('accessToken')) 
+    return localStorage.getItem('accessToken')
+  else 
+    return null 
+}
+//
+
 export default {
   namespaced: true,
   state: {
-    accessToken: null
+    accessToken: initialAccessTokenState()
   },
   mutations: {
     SET_ACCES_TOKEN(state, payload) {
