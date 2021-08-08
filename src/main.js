@@ -24,7 +24,6 @@ new Vue({
   store,
   methods: {
     init() {
-      console.log('test 🙍‍♂️');
       store.dispatch('oauth/getToken', null, { root: true })
     }
   },

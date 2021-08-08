@@ -1,18 +1,16 @@
 <template>
   <div class="home">
-    <h1>HOME PAGE</h1>
+    <home-title />
+    <home-form />
   </div>
 </template>
 
 <script>
+import HomeForm from './HomeForm.vue'
+import HomeTitle from './HomeTitle.vue'
 
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: { HomeTitle, HomeForm }
 }
 </script>
-
-<style lang="scss" scoped>
-h1 {
-  color: $red;
-}
-</style>
