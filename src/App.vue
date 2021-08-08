@@ -1,13 +1,33 @@
 <template>
- <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-      |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div id="app">
+    <load-layout v-if="isLoading">
+      <base-loading />
+    </load-layout>
+
+    <main-layout v-else />
   </div>
 </template>
+
+<script>
+import BaseLoading from '@/components/BaseLoading'
+import MainLayout from '@/layouts/MainLayout'
+import LoadLayout from '@/layouts/LoadLayout'
+import { mapState } from 'vuex'
+
+export default {
+  name: 'App',
+  components: {
+    BaseLoading,
+    MainLayout,
+    LoadLayout
+  },
+  computed: {
+    ...mapState('loading', {
+      isLoading: 'isLoading'
+    })
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

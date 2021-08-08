@@ -2,35 +2,36 @@ import * as oauth from '@/api/oauth'
 
 // inicializacion - localstorage - null
 const initialAccessTokenState = () => {
-  if (localStorage.getItem('accessToken')) 
+  if (localStorage.getItem('accessToken'))
     return localStorage.getItem('accessToken')
-  else 
-    return null 
+  else return null
 }
 //
-
 export default {
   namespaced: true,
   state: {
     accessToken: initialAccessTokenState()
   },
   mutations: {
-    SET_ACCES_TOKEN(state, payload) {
+    SET_ACCESS_TOKEN(state, payload) {
       state.accessToken = payload
     }
   },
   actions: {
     getToken(context) {
-      oauth
-        .getToken()
-        .then(res => {
-          context.commit('SET_ACCES_TOKEN', res.data.access_token)
+      // Llama a la mutacion del Modulo Loading
+      context.commit('loading/SET_LOADING', true, { root: true })
+
+      oauth.getToken()
+        .then(({ data }) => {
+          context.commit('SET_ACCESS_TOKEN', data.access_token)
         })
         .catch(err => {
-          console.log(err)
+          context.commit('SET_ACCESS_TOKEN', null)
+          console.log('Error Oauth', err)
         })
         .finally(() => {
-          console.log('DONE!')
+          context.commit('loading/SET_LOADING', false, { root: true })
         })
     }
   }

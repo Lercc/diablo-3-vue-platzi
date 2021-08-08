@@ -5,7 +5,14 @@
 </template>
 
 <script>
+
 export default {
-  name: 'Home',
+  name: 'Home'
 }
 </script>
+
+<style lang="scss" scoped>
+h1 {
+  color: $red;
+}
+</style>
