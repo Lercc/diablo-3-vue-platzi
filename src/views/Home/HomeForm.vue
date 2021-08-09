@@ -77,7 +77,7 @@ export default {
         name: 'Profile',
         params: {
           region,
-          batlleTag: battleTag.replace('#','-')
+          battleTag: battleTag.replace('#', '-')
         }
       })
     }
